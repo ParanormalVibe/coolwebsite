@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@800&family=Righteous&family=Russo+One&family=Tourney:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Share+Tech&display=swap');
+
+body {
+    background-color: #1F155E;
+}
+.bodycontainer {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.maincontainer {
+    height: 98vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: 1s ease-out;
+}
+.photocontainer {
+    display: flex;
+    border: black solid 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.342);
+}
+.hovertext{
+    text-align: center;
+    width: 250px;
+    height: 20%;
+}
+.imgoverlay {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap:wrap;
+}
+.photocontainer:hover .imgoverlay {
+    animation: overlayfadeup 0.3s ease-out forwards;
+}
+
+
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    width: 60%;
+    margin: 5%;
+    overflow: hidden;
+    
+}
+.sectiontitle {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 10%;
+    font-size: 30px;
+    align-items: center;
+}
+h2 {
+    font-family: 'Russo One', sans-serif;
+}
+.sectiontext {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    color: cornsilk;
+    overflow: hidden;
+    align-items: center;
+    font-size: 2.5vw;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+ul {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#avaleht {
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+.tervitus {
+    text-align: center;
+    
+}
+.tervitus h1{
+    color: rgb(227, 237, 255);
+    font-size: 10vw;
+    font-family: 'Russo One', sans-serif;
+    padding-bottom: 10vh;
+    animation: flicker-glow 3s infinite, shake 3s infinite steps(1);
+}
+.scroll {
+    
+    background-image: url(https://www.seekpng.com/png/full/241-2418356_arrow-white-white-scroll-down-gif.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 40px;
+    animation: fade-down 2s cubic-bezier(0.51, 0.16, 0.54, 0.08) infinite forwards;
+}
+
+#minust {
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+
+#huvid {
+    overflow: hidden;
+}
+
+
+.contentcontainer {
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    border: black solid 10px;
+    background-color: rgb(243, 240, 240);
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    display: none;
+}
+.maincontainer:hover .contentcontainer{
+    animation: enterleft 2.5s forwards ease-out;
+    display: flex;
+}
+
