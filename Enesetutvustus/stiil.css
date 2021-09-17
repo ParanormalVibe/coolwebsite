@@ -138,10 +138,13 @@ ul {
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-    display: none;
+    transform: translateX(-100vw);
 }
 .maincontainer:hover .contentcontainer{
     animation: enterleft 2.5s forwards ease-out;
     display: flex;
 }
 
+.maincontainer:not(:hover) .contentcontainer{
+    animation: exitleft 2.5s forwards ease-out;
+}

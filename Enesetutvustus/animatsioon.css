@@ -96,10 +96,19 @@
 }
 
 @keyframes enterleft {
-    0% {
-        transform: translateX(-200vh);
+    from {
+        transform: translateX(-100vw);
     }
-    50%, 100% {
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes exitleft {
+    from {
         transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100vw);
     }
 }
